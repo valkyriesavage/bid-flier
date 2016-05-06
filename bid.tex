@@ -1,7 +1,11 @@
 \documentclass[foldmark,10pt,a4paper,notumble]{leaflet}
 
 \usepackage{graphicx}
+\renewcommand{\sfdefault}{phv}
 \renewcommand{\familydefault}{\sfdefault}
+\newcommand{\name}[1]{#1,}
+\newcommand{\email}[1]{\emph{#1}\\}
+\newcommand{\website}[1]{\emph{#1}\\[3pt]}
 
 \usepackage{titlesec}
 \titleformat*{\subsection}{\normalsize\bfseries}
@@ -24,8 +28,8 @@ Director, Berkeley Institute of Design\\
 Alice Agogino, Mechanical Engineering\\
 \emph{agogino@berkeley.edu}\\
 \\
-Maneesh Agrawala, Computer Science\\
-\emph{maneesh@cs.berkeley.edu}\\
+Eric Paulos, Computer Science\\
+\emph{paulos@berkeley.edu}\\
 \\
 Bj\"orn Hartmann, Computer Science\\
 \emph{bjoern@eecs.berkeley.edu}\\
@@ -38,66 +42,71 @@ Kimiko Ryokai, School of Information\\
 \newpage
 \fontsize{3mm}{3.5mm}\selectfont
 
-\subsection{Topic-Driven Adaptive Exercises}
-\emph{Den Armendariz, danallan@eecs.berkeley.edu}\\
-Adaptive technologies in various assessments have long been
-able to present a progression of difficulty in questions that is based
-on past performance. This project investigates how student engagement
-is impacted by an adaptive system that also customizes the progression
-of question topics. Not only is the difficulty of the questions
-customized to the user, but also the progression of topics to ensure
-competency in prerequisite topics before advancement.
+\subsection{Designing Video-Based Interactive Instructions}
+\name{Peggy Chi}
+\email{peggychi@cs.berkeley.edu}
+\website{http://www.cs.berkeley.edu/$\sim$peggychi/}
+When attempting to accomplish unfamiliar tasks, people often search for online tutorials to follow instructions. We design video-based recording, editing, and playback tools optimized for creating and consuming interactive tutorials from author demonstrations. Our approaches acquire videos and high-level events that are important to a learner and automatically generate novel instructional formats. A series of systems to support this vision includes: MixT [UIST'12], DemoCut [UIST'13], Kinectograph [CHI'13], DemoWiz[CHI'14], and an ongoing project for authoring motion illustrations.
 
-\subsection{Urban Analytics and Kinectograph}
-\emph{Derrick Cheng, derrick@eecs.berkeley.edu}\\
-\emph{http://linkedin.com/chengderrick}\\
-I work with Professor Canny in behavioral data mining. We are currently working on a project in Urban Analytics, in which we are analyzing community feedback on topics related to urban planning and development. 
-In addition to this work, I am also involved in a project called Kinectograph - an automatic body tracking camera for DIY tutorials.
+\subsection{Resistance as a Resource for Design}
+\name{Laura Devendorf}
+\email{ldevendorf@ischool.berkeley.edu}
+\website{http://artfordorks.com}
+My research blends computer science, art history, and science and technology studies to explore how design can provoke collaborative relationships between people, technology, and non-human things. Collaborative relationships require care and compromise and I explore them through the development of interfaces that resist a person’s familiar practices. My studies of resistance in the design of mobile apps, wearable technology, and digital fabrication show how collaborating with resistant technology can provoke curiosity, inspiration, and enchanting encounters with everyday things.
 
-\subsection{DemoCut: Generating Concise Instrucional Videos for Physical Demonstrations}
-\emph{Peggy Chi, peggychi@cs.berkeley.edu}\\
-\emph{http://www.cs.berkeley.edu/$\sim$peggychi/}\\
-DemoCut is a semi-automatic video editing system that creates amateur instructional videos for physical DIY tasks. It asks users to mark key moments in a recorded demonstration. Using audio and video analysis, our system automatically organizes the video into meaningful segments and applies appropriate video editing effects, including subtitles, fast motion, leap frog, zoom, and skip.
-
-\subsection{Fostering Deep Engagements with Technology}
-\emph{Laura Devendorf, ldevendorf@ischool.berkeley.edu}\\
-\emph{http://artfordorks.com}\\
-Working at the intersection of the art and computer science, I design and study technologies for creativity, self expression, reflection, and discovery.
-
-\subsection{Turning Sustainability From a Burden into an Innovation Tool}
-\emph{Jeremy Faludi, faludi@berkeley.edu}\\
-\emph{http://www.faludidesign.com}\\
-Sustainability has historically been seen by designers and engineers as a burden--a further constraint on them.  This new design method instead uses sustainability points of view as tools for innovation.  It uses a combination of whole-systems and life-cycle thinking to break down assumptions and lead engineers to reformulate problems for radical reductions in environmental impacts while also improving functionality, business viability, and user experience.
-
-\subsection{Design Informatics: Leveraging Crowds to Create Better Designs}
-\emph{Mark Fuge, mark.fuge@berkeley.edu}\\
-\emph{http://www.markfuge.com}\\
-What makes a particular design good? How do we make new designs better? My line of research attempts to answer those questions by using data-driven techniques to study large sets of human generated designs â€“ an approach I refer to as Design Informatics. By using probabilistic inference over large databases of designs, we can extract why certain designs are better than others and shed light on the principles or processes that are used to construct new designs. This approach has been used to propose and answer several design questions, such as: What makes certain design more creative than others? How are design methods related to each other? How do collaborative design challenges operate?
+\subsection{Environmental Impacts of 3D Printing}
+\name{Jeremy Faludi}
+\email{faludi@berkeley.edu}
+\website{http://www.faludidesign.com}
+3D printing is revolutionizing manufacturing; will it also revolutionize the ecological impacts of making things? Or will it create more problems than it solves? Some colleagues and I in the UC Berkeley mechanical engineering department performed a full scope 3 cradle to gate life-cycle assessment of two 3D printers and a “traditional” CNC milling machine, to compare their eco-impacts. This resulted in a paper in Rapid Prototyping Journal, due for publication in 2014.
 
 \subsection{Human-Inspired Technology}
-\emph{Shiry Ginosar, shiry@eecs.berkeley.edu}\\
-\emph{http://www.eecs.berkeley.edu/$\sim$shiry}\\
+\name{Shiry Ginosar}
+\email{shiry@eecs.berkeley.edu}
+\website{http://www.eecs.berkeley.edu/$\sim$shiry}
 Humans are highly evolved beings with computational capabilities that modern algorithms can rarely achieve. This is particularly true in the area of complex learning and visual perception. I am interested in modeling human performance in different areas and designing technology inspired by these abilities.
 
-\subsection{Human-Centric User Research to Identify Disruptive Opportunties in Convergent Paper and Digital Use}
-\emph{Euiyoung Kim, euiyoungkim@berkeley.edu}\\
-\emph{http://euiyoungkim.wordpress.com}\\
-Although digital devices have their own unique features that differentiate them from other
-tangible types of resources for reading, writing and sketching, a majority of people still prefers traditional
-paper media as it provides better user experiences in many aspects: readability, portability, ease of
-making annotations, shared reading, tactile sensory experiences, etc. This research will identify
-barriers and opportunities for paper-like features based on various human-centered design methods and
-explore a new product concept driven by this research. Based on this design research, we propose to
-design conceptual prototypes along with use scenarios. 
+\subsection{Synthesizing explanations of online example code}
+\name{Andrew Head}
+\email{andrewhead@eecs.berkeley.edu}
+\website{http://andrewhead.info}
+Programmers use the web to learn and clarify details as they write code. But online information can be fragmented, unreliable, incomplete, or written for readers with a different background. I develop systems that synthesize explanations for under-explained code on the fly.  I explore what makes effective components of explanations, and techniques for building explanation generators.
 
-\subsection{Using AI to Extract Information from Charts}
-\emph{Nicholas Kong, nkong@cs.berkeley.edu}\\
-\emph{http://eecs.berkeley.edu/$\sim$nkong}\\
-Visualizations and charts must be carefully designed for their audience, but even the best designed charts are not ideal for every viewer. We apply image and natural language processing techniques to charts to extract information that can help improve the utility of visualizations for users. We have used these techniques for chart redesign and overlays for charts, and are working on associating text with marks (such as bars or lines) in the chart.
+\subsection{Interactive machine learning}
+\name{Biye Jiang}
+\email{bjiang@cs.berkeley.edu}
+\website{http://byeah.github.io/}
+I am interested in building toolkits for modern data scientists who will usually work on prototyping new models or running experiments on large scale dataset. Our methodology includes but not limit to using hardware accelerations like GPU, providing implementation framework for machine learning algorithms, building visual interface for real-time control and monitoring. Boosting low-level machine performance and improving human productivity are both important for modern data analytic tasks. Therefore my research is trying to bridge the gap between users and the complex machine learning systems.
+
+\subsection{Design Roadmapping}
+\name{Euiyoung Kim}
+\email{euiyoungkim@berkeley.edu}
+\website{http://best.berkeley.edu/best-research/design-roadmap/}
+While product and technology roadmaps have been well-formalized in terms of their structures, methodologies, and frameworks, design roadmaps have not been explicitly explored nor studied from either an academic or industry practice standpoint. Strategies that revolve around the holistic experience of products are more likely to be successful in today’s market. As first step, we develop a design driven roadmapping process as a new way of preparing future product concepts and define elements and steps.
+
+\subsection{Design thinking for social impact}
+\name{Julia Kramer}
+\email{j.kramer@berkeley.edu}
+I conduct research at the intersection of design thinking and global development. I investigate the design methods and tools that designers use when working on social impact projects, and I seek to understand how these methods are related to the context in which the designers are working. I also explore design theory and methodology more generally through my work on theDesignExchange (www.thedesignexchange.org), an online repository and ontology of design methods useful for designers across a variety of disciplines.
+
+\subsection{Integrating Existing Objects with Digital Designs}
+\name{Jingyi Li}
+\email{noon@berkeley.edu}
+\website{http://jingyi.me}
+Design tools for digital fabrication have opened a wide array of opportunities for creating new objects with functional and aesthetic properties. Currently, we are exploring leveraging digital fabrication to modify or augment existing objects. In Makers’ Marks, physically annotated sculptures serve as tangible blueprints for new functional objects, and in Banksybot, found objects are canvases for surface engravings and decorations.
+
+
+\subsection{ESP (Example-based Sensor Predictions)}
+\name{David A. Mellis}
+\email{mellis@berkeley.edu}
+\website{http://web.media.mit.edu/~mellis/}
+This project helps novices make sophisticated use of sensors in interactive projects through the application of machine learning. With our system, experts author example code for particular applications. Our system generates a GUI which allows end-users to supply their own training data, calibrate their sensors, and tune the machine learning algorithms for incorporation in their own projects. This example-centric approach allows to provide a customized, usable interface across a wide range of real-time sensing applications.
+% (w/ Ben Zhang, Audrey Leung, and Bjoern Hartmann)
 
 \subsection{Internet-based Collaboration}
-\emph{Mitar Milutinovi\'c, mitar@tnode.net}\\
-\emph{http://mitar.tnode.com}\\
+\name{Mitar Milutinovi\'c}
+\email{mitar@tnode.net}
+\website{http://mitar.tnode.com}
 My research interests are e-democracy, deliberative democracy,
 collective intelligence, trust networks, group decision support systems,
 collaboration tools, peer-to-peer and distributed systems, wireless
@@ -107,57 +116,25 @@ access scholarly literature called PeerLibrary (http://peerlibrary.org/)
 and on a voting scheme which uses a social network between voters to
 find a better overall group decision.
 
-\subsection{Human Potential Technology}
-\emph{Pablo Paredes, paredes@eecs.berkeley.edu}\\
-\emph{http://eecs.berkeley.edu/$\sim$paredes}\\
-My research focuses on Human Potential Realization. HCI has been supporting efforts to help people realize goals that are externally imposed and time bounded through CSCW and Mass Media technology. Recently Persuasive and Behavior Change Technologies have been supporting short term intrinsic goals. However there seems to be a gap in technology development for long-term intrinsic goals, those so-called life goals, such as having a healthy, stress-free life, being a good father, or fulfilling a career, etc. I am researching the type of sensing, feedback, intervention and identity technologies, needed to help people realize such life goals. I am currently exploring machinima as a way to deliver interactive movies, sensor-less sensing, as a way to non-invasively detect affect and live journal data mining for auto biographical narrative study to support identity change.
-
-\subsection{Improving Editing Interfaces for Audio Stories}
-\emph{Steve Rubin, srubin@cs.berkeley.edu}\\
-\emph{http://ssrubin.com}\\
-Producers of radio shows, podcasts, and audiobooks face
-several challenges when editing raw footage into a final story. One
-challenge is that of adding musical scores to stories. Our UnderScore
-system analyzes music and allows producers to automatically add music
-to emphasize important parts of the their stories. With UnderScore and
-other tools, we aim to allow producers to think of and edit their
-stories in terms of high-level content as opposed to low-level
-waveforms.
-
 \subsection{Actuated Tensegrity Structures for Dynamic Locomotion}
-\emph{Andrew Sabelhaus, apsabelhaus@berkeley.edu}\\
-\emph{http://tinyurl.com/TensegrityRobots}\\
+\name{Andrew Sabelhaus}
+\email{apsabelhaus@berkeley.edu}
+\website{http://tinyurl.com/TensegrityRobots}
 Combining the popular mechatronics paradigms of soft robotics and bio-inspiration, actuated Tensegrity structures offer opportunities for unique movement and locomotion methods. Tensegrity robots are comprised of purely tensile and compressive elements (cables and rods) that change shape when their tensions are adjusted. Based on prior work that used machine learning techniques to develop control laws for such actuation, this research seeks to create a physical realization of a Tensegrity robot.
 
-\subsection{Sauron: Embedded Single-Camera Sensing of Printed Physical User Interfaces}
-\emph{Valkyrie Savage, valkyrie@eecs.berkeley.edu}\\
-\emph{http://valkyriesavage.com}\\
-3D printers enable designers to rapidly produce models of future products.  Today these physical prototypes are mostly \emph{passive}.  Our goal is to enable designers to turn models produced on commodity 3D printers into interactive objects with minimal assembly or instrumentation.  We present Sauron, an embedded machine vision-based system for sensing human input on physical controls like buttons, sliders, and joysticks.  Sauron automatically modifies the interior geometry of a designer's object so that, when printed, all components can be sensed by adding a single inward-pointing camera.
+\subsection{Fabbed To Sense: Co-Design of Geometry and Sensing Algorithms for Interactive Objects}
+\name{Valkyrie Savage}
+\email{valkyrie@eecs.berkeley.edu}
+\website{http://valkyriesavage.com}
+Digital fabrication tools like 3D printers and laser cutters are often used in the process of prototyping interactive objects. However, they are often used to make static parts, like cases or mounts. We have developed a framework linking pre-fabrication digital geometry and knowledge of fabricated material properties to desired sensing techniques; thus we can leverage 3D printed plastics or vinyl-cut foils directly as senseable elements. We call this ``Fabbing to Sense'', and over the course of my research we have developed three instances of this technique: Midas [UIST12], Lamello [CHI15], and Sauron [UIST13].
 
-\subsection{MOOC Analytics}
-\emph{Kristin Stephens-Martinez, ksteph@cs.berkeley.edu}\\
-\emph{http://www.cs.berkeley.edu/$\sim$ksteph/}\\
-Massive Open Online Courses (MOOCs) have tens of thousands of students enrolled in an online course at once. With so many more students than physical classrooms and lots of new kinds of information recorded, how can we use it to make things better? My goal is to find and automate ways to find interesting things in MOOC data. Then I will also find how best to visualize that information for teachers.
+\subsection{Identify misunderstanding in students and delivering guidance to fix them}
+\name{Kristin Stephens-Martinez}
+\email{ksteph@cs.berkeley.edu}
+\website{http://www.cs.berkeley.edu/$\sim$ksteph/}
+We propose a model that uses student incorrect constructed responses to identify conceptual misunderstandings. We do this by labeling the popular wrong answers with the misunderstandings they indicate, then use co-occurrence to predict other answers' labels. This approach leverages a small amount of human effort to seed an automated procedure. Our approach involves much less effort than inspecting all answers and substantially outperforms an uninformed baseline. Our next steps involve using the misunderstanding model to deliver guidance messages to students in hopes to fix their misunderstandings.
 
-\subsection{Ambient Stress Detection}
-\emph{David Sun, davidsun@eecs.berkeley.edu}\\
-\emph{http://www.eecs.berkeley.edu/$\sim$davidsun/}\\
-Stress has a profound impact on the emotional, cognitive and physical
-well-being of people. Routine and unobtrusive monitoring of stress
-would enable a variety of treatments, from break-taking to calming
-exercises. Custom sensing is a poor option, because of the barrier to
-entry even before stress-related problems are evident. In this work,
-we explore ambient stress detection from peopleÎéÎ÷s everyday
-interactions with commodity devices including cellphones and the
-computer mouse.
+\vspace{12pt}
+Latest update: \today
 
-\subsection{Speech-Enabled Games for Language Learning}
-\emph{Anuj Tewari, anuj@eecs.berkeley.edu}\\
-\emph{http://cs.berkeley.edu/$\sim$anuj}\\
-Lack of proper English instructions is a major problem for a variety of populations around the world. This lack of exposure poses various serious problems, including a barrier to entry into mainstream society. At the Berkeley Institute of Design we explore a variety of topics like mobile phone games for language learning in developing countries, pronunciation feedback for Hispanic children and question-answering technologies for preschoolers. Details on some of these projects can be found here: http://www.cs.berkeley.edu/$\sim$anuj/language\_learning\_games
-
-\subsection{Ingenuity Lab: Making and Engineering through Design Challenges at a Science Center}
-\emph{Jennifer Wang, jennifer\_wang@berkeley.edu}\\
-\emph{http://best.berkeley.edu/$\sim$jen}\\
-My research studies how to increase access and interest in engineering through tinkering spaces at public science centers, in particular at the Ingenuity Lab at the Lawrence Hall of Science. I implement an innovative cross-community design of Ingenuity Lab programs involving engineers, students, and educators and analyze its impact on the learner experience. Through observations, surveys, and interviews, I study learners' engineering-as-"tinkering" experience, persistence in the activities, and potential consequences for long-term interest.
 \end{document}
