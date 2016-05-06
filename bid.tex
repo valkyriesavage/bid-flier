@@ -4,11 +4,13 @@
 \renewcommand{\sfdefault}{phv}
 \renewcommand{\familydefault}{\sfdefault}
 \newcommand{\name}[1]{#1,}
-\newcommand{\email}[1]{\emph{#1}\\}
-\newcommand{\website}[1]{\emph{#1}\\[3pt]}
+\newcommand{\email}[1]{\emph{#1}}
+\newcommand{\website}[1]{\\\emph{#1}\\[3pt]}
+\newcommand{\nowebsite}[1]{\\[3pt]}
 
 \usepackage{titlesec}
-\titleformat*{\subsection}{\normalsize\bfseries}
+\titleformat*{\subsection}{\small\bfseries}
+\titlespacing*{\subsection}{0pt}{6pt}{0pt}
 
 \begin{document}
 \begin{center}
@@ -42,11 +44,17 @@ Kimiko Ryokai, School of Information\\
 \newpage
 \fontsize{3mm}{3.5mm}\selectfont
 
+\subsection{Analysis of Thruster Attitude Control for Tensegrity Robots}
+\name{Brian Cera}
+\email{brianmcera@berkeley.edu}
+\nowebsite{}
+Prior work has shown that compliant spherical tensegrity robots are capable of short, precise movements using a punctuated rolling motion. However, in order for tensegrities to be viable space exploration rovers, they must also be capable of traversing large distances across planetary and lunar surfaces. My research focuses on orientation control of a cold-gas thruster using model predictive control to achieve an energy-efficient hopping profile to vastly improve the robot's mobility.
+
 \subsection{Designing Video-Based Interactive Instructions}
 \name{Peggy Chi}
 \email{peggychi@cs.berkeley.edu}
-\website{http://www.cs.berkeley.edu/$\sim$peggychi/}
-When attempting to accomplish unfamiliar tasks, people often search for online tutorials to follow instructions. We design video-based recording, editing, and playback tools optimized for creating and consuming interactive tutorials from author demonstrations. Our approaches automatically generate novel instructional formats from videos and high-level events that are important to a learner. A series of systems to support this vision includes: MixT [UIST'12], DemoCut [UIST'13], Kinectograph [CHI'13], DemoWiz [CHI'14], and an ongoing project for authoring motion illustrations.
+\website{http://www.cs.berkeley.edu/\texttt{\char`\~}peggychi/}
+When attempting to accomplish unfamiliar tasks, people often search for online tutorials to follow instructions. We design video-based recording, editing, and playback tools optimized for creating and consuming interactive tutorials from author demonstrations. Our automatic approaches generate novel instructional formats from videos and high-level events that are important to a learner. A series of systems to support this vision includes: MixT [UIST'12], DemoCut [UIST'13], DemoWiz [CHI'14], and a project for authoring motion illustrations.
 
 \subsection{Design and Control of a Twelve-Bar Tensegrity Robot}
 \name{Mallory Daly}
@@ -66,11 +74,12 @@ My research blends computer science, art history, and science and technology stu
 \website{http://www.faludidesign.com}
 3D printing is revolutionizing manufacturing; will it also revolutionize the ecological impacts of making things? Or will it create more problems than it solves? Some colleagues and I in the UC Berkeley mechanical engineering department performed a full scope 3 cradle to gate life-cycle assessment of two 3D printers and a “traditional” CNC milling machine, to compare their eco-impacts. This resulted in a paper in Rapid Prototyping Journal, due for publication in 2014.
 
-\subsection{Human-Inspired Technology}
-\name{Shiry Ginosar}
-\email{shiry@eecs.berkeley.edu}
-\website{http://www.eecs.berkeley.edu/$\sim$shiry}
-Humans are highly evolved beings with computational capabilities that modern algorithms can rarely achieve. This is particularly true in the area of complex learning and visual perception. I am interested in modeling human performance in different areas and designing technology inspired by these abilities.
+% temporarily removed because of non-updated info from 2013
+% \subsection{Human-Inspired Technology}
+% \name{Shiry Ginosar}
+% \email{shiry@eecs.berkeley.edu}
+% \website{http://www.eecs.berkeley.edu/\texttt{\char`\~}shiry}
+% Humans are highly evolved beings with computational capabilities that modern algorithms can rarely achieve. This is particularly true in the area of complex learning and visual perception. I am interested in modeling human performance in different areas and designing technology inspired by these abilities.
 
 \subsection{Synthesizing Explanations of Online Example Code}
 \name{Andrew Head}
@@ -93,6 +102,7 @@ While product and technology roadmaps have been well-formalized in terms of thei
 \subsection{Design Thinking for Social Impact}
 \name{Julia Kramer}
 \email{j.kramer@berkeley.edu}
+\nowebsite{}
 I conduct research at the intersection of design thinking and global development. I investigate the design methods and tools that designers use when working on social impact projects, and I seek to understand how these methods are related to the context in which the designers are working. I also explore design theory and methodology more generally through my work on theDesignExchange (www.thedesignexchange.org), an online repository and ontology of design methods useful for designers across a variety of disciplines.
 
 \subsection{Integrating Existing Objects with Digital Designs}
@@ -101,11 +111,16 @@ I conduct research at the intersection of design thinking and global development
 \website{http://jingyi.me}
 Design tools for digital fabrication have opened a wide array of opportunities for creating new objects with functional and aesthetic properties. Currently, we are exploring leveraging digital fabrication to modify or augment existing objects. In Makers’ Marks, physically annotated sculptures serve as tangible blueprints for new functional objects, and in Banksybot, found objects are canvases for surface engravings and decorations.
 
+\subsection{Tools for Quickly Prototyping and Debugging Interactive Devices}
+\name{Will McGrath}
+\email{wmcgrath@eecs.berkeley.edu}
+\nowebsite{}
+Cheap and readily available sensors, actuators, microcontrollers, and wireless solutions have made it possible for novices to start building new classes of interactive devices. However, designers still face barriers in circuit-building and embedded programming. Many Wearable and Internet of Things projects also have to deal with more complex networking and communication requirements. I am working to design better toolkits and platforms to help people avoid common mistakes and quickly prototype more complex devices and applications.
 
 \subsection{ESP (Example-based Sensor Predictions)}
 \name{David A. Mellis}
 \email{mellis@berkeley.edu}
-\website{http://web.media.mit.edu/$\sim$mellis/}
+\website{http://web.media.mit.edu/\texttt{\char`\~}mellis/}
 This project helps novices make sophisticated use of sensors in interactive projects through the application of machine learning. With our system, experts author example code for particular applications. Our system generates a GUI which allows end-users to supply their own training data, calibrate their sensors, and tune the machine learning algorithms for incorporation in their own projects. This example-centric approach allows to provide a customized, usable interface across a wide range of real-time sensing applications.
 % (w/ Ben Zhang, Audrey Leung, and Bjoern Hartmann)
 
@@ -118,6 +133,12 @@ possible for non-programmers through visual and real-time programming.
 Recently I have been investigating how to make it easier for developers
 to make secure and privacy-preserving web applications without requiring
 them to be experts in computer security.
+
+\subsection{Searching and Browsing Videos}
+\name{Amy Pavel}
+\email{amypavel@eecs.berkeley.edu}
+\website{http://www.eecs.berkeley.edu/\texttt{\char`\~}amypavel/}
+Searching and browsing through long videos to find particular clips is tedious and time consuming. Currently, users need to scrub carefully in the video timeline to navigate to the portion of interest. Our research lets users search and browse in long videos using text. We've built tools to support searching and browsing in online educational videos (Video Digests at UIST 2014), and movies (SceneSkim at UIST 2015).
 
 \subsection{Walking Robots with Flexible Tensegrity Spines}
 \name{Andrew P. Sabelhaus}
@@ -134,10 +155,10 @@ Digital fabrication tools like 3D printers and laser cutters are often used in t
 \subsection{Identify Misunderstanding in Students and Delivering Guidance to Fix Them}
 \name{Kristin Stephens-Martinez}
 \email{ksteph@cs.berkeley.edu}
-\website{http://www.cs.berkeley.edu/$\sim$ksteph/}
+\website{http://www.cs.berkeley.edu/\texttt{\char`\~}ksteph/}
 We propose a model that uses student incorrect constructed responses to identify conceptual misunderstandings. We do this by labeling the popular wrong answers with the misunderstandings they indicate, then use co-occurrence to predict other answers' labels. This approach leverages a small amount of human effort to seed an automated procedure. Our approach involves much less effort than inspecting all answers and substantially outperforms an uninformed baseline. Our next steps involve using the misunderstanding model to deliver guidance messages to students in hopes to fix their misunderstandings.
 
-\subsection{(missing title)}
+\subsection{MyPart: Personal, Portable, Accurate Airborne Particle Counting}
 \name{Rundong Tian}
 \email{rutian@berkeley.edu}
 \website{http://rundongtian.com}
@@ -146,6 +167,7 @@ In 2012, air pollution in both cities and rural areas was estimated to have caus
 \subsection{Investigation of Impact Characteristics of Tensegrity Structures}
 \name{Edward Zhu}
 \email{edward.zhu@berkeley.edu}
+\nowebsite{}
 Due to their unique compliance, tensegrity structures are capable of absorbing large amounts of energy upon impact. This allows for robustness in the deployment process during planetary exploration. My research will further investigate the behavior of tensegrity structures in different impact scenarios in order to improve its survivability in different landing situations.
 
 \vspace{12pt}
